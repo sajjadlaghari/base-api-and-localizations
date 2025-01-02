@@ -16,7 +16,7 @@ class UserAPIController extends Controller
         $rules = [
             'first_name' => 'required',
             'last_name' => 'required',
-            'email' => 'required',
+            'email' => 'required|unique:users',
             'password' => 'required'
         ];
 
